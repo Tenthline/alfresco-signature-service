@@ -1,7 +1,11 @@
 <rule-config type="action">
 
-   <component>PDFToolkit.RuleConfigActionCustom</component>
-   
+   <!-- This defines the client-side JavaScript widget to instantiate -->
+   <component>Alfresco.RuleConfigAction</component>
+
+   <!-- The "webscript" attribute defines a repository WebScript from which to retrieve some
+        data. The remove element will be processed to remove any matching elements from the
+        return data. -->
    <config-definitions webscript="/api/actiondefinitions">
       <!--
          Public Action Definitions that we don't want displayed in the menu
@@ -11,9 +15,9 @@
          <action name="blog-post"/>
       </remove>
    </config-definitions>
-   
+
    <constraints webscript="/api/actionConstraints"/>
-   
+
    <menu>
       <group>
 			<item id="select"/>
@@ -63,16 +67,34 @@
 			<action name="counter"/>
 		</group>
       <group>
-         <action name="*"/>
+         <action name="set-property-value"/>
       </group>
       <group>
+         <action name="*"/>
+      </group>
+	  <group>
 	      <action name="pdf-insert-at-page"/>
       </group>
    </menu>
 
    <customise>
       <item id="select">Select</item>
-      <action name="pdf-insert-at-page">PDFInsertAtPage</action>
+      <action name="specialise-type">SpecialiseType</action>
+      <action name="add-features">AddFeatures</action>
+      <action name="remove-features">RemoveFeatures</action>
+      <action name="check-in">CheckIn</action>
+      <action name="check-out">Checkout</action>
+      <action name="copy">Copy</action>
+      <action name="move">Move</action>
+      <action name="simple-workflow">SimpleWorkflow</action>
+      <action name="mail">Mail</action>
+      <action name="link-category">LinkCategory</action>
+      <action name="script">Script</action>
+      <action name="transform">Transform</action>
+      <action name="transform-image">Transform</action>
+      <action name="import">Import</action>
+      <action name="set-property-value">SetPropertyValue</action>
+	  <action name="pdf-insert-at-page">PDFInsertAtPage</action>
    </customise>
-   
+
 </rule-config>

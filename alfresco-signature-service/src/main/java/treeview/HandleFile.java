@@ -2,16 +2,25 @@ package org.tenthline.treeview;
 
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Image;
-import com.itextpdf.text.pdf.*;
+import com.itextpdf.text.pdf.PdfContentByte;
+import com.itextpdf.text.pdf.PdfReader;
+import com.itextpdf.text.pdf.PdfStamper;
 import org.alfresco.error.AlfrescoRuntimeException;
 import org.alfresco.model.ContentModel;
 import org.alfresco.service.ServiceRegistry;
-import org.alfresco.service.cmr.model.*;
+import org.alfresco.service.cmr.model.FileExistsException;
+import org.alfresco.service.cmr.model.FileInfo;
 import org.alfresco.service.cmr.repository.*;
 import org.alfresco.util.TempFileProvider;
 import org.apache.pdfbox.pdmodel.PDDocument;
-import org.springframework.extensions.webscripts.*;
+import org.springframework.extensions.webscripts.AbstractWebScript;
+import org.springframework.extensions.webscripts.WebScriptRequest;
+import org.springframework.extensions.webscripts.WebScriptResponse;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Iterator;
 import java.util.List;
 
