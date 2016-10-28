@@ -1,20 +1,10 @@
 
-.idea/.name
-
-.idea/compiler.xml
+.idea/
 
 alfresco-signature-service.iml
 
-.idea/copyright/profiles_settings.xml
+alfresco-signature-share-service.iml
 
-.idea/encodings.xml
+alfresco-signature-service/target/
 
-.idea/misc.xml
-
-.idea/modules.xml
-
-.idea/uiDesigner.xml
-
-.idea/vcs.xml
-
-.idea/workspace.xml
+alfresco-signature-share-service/target/
