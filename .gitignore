@@ -6,5 +6,7 @@ alfresco-signature-service.iml
 alfresco-signature-share-service.iml
 
 alfresco-signature-service/target/
+/alfresco-signature-service/target/
 
 alfresco-signature-share-service/target/
+/alfresco-signature-share-service/target/

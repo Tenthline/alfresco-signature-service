@@ -90,8 +90,8 @@
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcmail-jdk14 -->
         <dependency>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcmail-jdk14</artifactId>
-            <version>1.38</version>
+            <artifactId>bcmail-jdk16</artifactId>
+            <version>1.46</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bctsp-jdk14 -->
@@ -101,11 +101,11 @@
             <version>1.38</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk14 -->
+        <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk16 -->
         <dependency>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcprov-jdk14</artifactId>
-            <version>1.38</version>
+            <artifactId>bcprov-jdk16</artifactId>
+            <version>1.46</version>
         </dependency>
     </dependencies>
 </project>
